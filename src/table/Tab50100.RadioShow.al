@@ -12,6 +12,7 @@ table 50100 "Radio Show"
         field(2; "Radio Show Type"; Code[10])
         {
             Caption = 'Radio Show Type';
+            TableRelation = "Radio Show Type";
         }
         field(3; Name; Text[100])
         {
@@ -44,6 +45,53 @@ table 50100 "Radio Show"
         field(10; "Royalty Cost"; Decimal)
         {
             Caption = 'Royalty Cost';
+        }
+        field(11; Frequency; Option)
+        {
+            Caption = 'Frequency';
+            OptionCaption = 'Daily,Weekly,Monthly,Yearly';
+            OptionMembers = Daily, Weekly, Monthly, Yearly;
+        }
+        field(12; "PSAs Required"; Boolean)
+        {
+            Caption = 'PSAs Required';
+        }
+        field(13; "Ads Required"; Boolean)
+        {
+            Caption = 'Ads Required';
+        }
+        field(14; "News Required"; Boolean)
+        {
+            Caption = 'News Required';
+            InitValue = true;
+        }
+        field(15; "News Duration"; Duration)
+        {
+            Caption = 'News Duration';
+        }
+        field(16; "Sports Required"; Boolean)
+        {
+            Caption = 'Sports Required';
+            InitValue = true;
+
+        }
+        field(17; "Sports Duration"; Duration)
+        {
+            Caption = 'Sports Duration';
+        }
+        field(18; "Weather Required"; Boolean)
+        {
+            Caption = 'Weather Required';
+            InitValue = true;
+        }
+        field(19; "Weather Duration"; Duration)
+        {
+            Caption = 'Weather Duration';
+        }
+        field(20; "Date Filter"; Date)
+        {
+            Caption = 'Date Filter';
+
         }
     }
     keys

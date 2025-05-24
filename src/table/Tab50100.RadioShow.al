@@ -8,6 +8,16 @@ table 50100 "Radio Show"
         field(1; "No."; Code[20])
         {
             Caption = 'No.';
+
+            trigger OnValidate()
+            begin
+
+            end;
+
+            trigger OnLookup()
+            begin
+                
+            end;
         }
         field(2; "Radio Show Type"; Code[10])
         {
